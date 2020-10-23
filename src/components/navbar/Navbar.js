@@ -1,8 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { StyledNavbar } from './Navbar.styled';
-import { CgMenu } from 'react-icons/cg'
-import ImageTitleButton from '../imageTitleLink/ImageTitleLink';
+import { CgMenu } from 'react-icons/cg';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
+import { IoMdDocument } from 'react-icons/io';
+import NavLink from '../navLink/NavLink';
 
 const Navbar = ({
   logo, 
@@ -21,11 +24,10 @@ const Navbar = ({
 
   const navLinkButtons = (
     <div className="nav-links">
-      <ImageTitleButton />
-      {/* <a href="">Github</a>
-      <a href="">LinkedIn</a>
-      <a href="">Email</a>
-      <a href="">Resume</a> */}
+      <NavLink Icon={ FaGithub } title="Github" href="#" />
+      <NavLink Icon={ FaLinkedinIn } title="LinkedIn" href="#" />
+      <NavLink Icon={ MdEmail } title="Email" href="#" />
+      <NavLink Icon={ IoMdDocument } title="Resume" href="#" />
     </div>
   );
 
