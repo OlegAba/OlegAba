@@ -5,7 +5,7 @@ export const StyledNavbar = styled.nav`
 
   .navbar-container {
     display: flex;
-    height: 20px;
+    height: 26px;
 
     .nav-logo {
       flex: 1;

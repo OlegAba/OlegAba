@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { StyledNavLink } from './NavLink.styled';
-import githubLogo from '../../assets/icons/github.svg';
 
 const NavLink = ({Icon, title, ...props }) => {
 
@@ -14,7 +13,8 @@ const NavLink = ({Icon, title, ...props }) => {
 }
 
 NavLink.propTypes = {
-
+  Icon: PropTypes.node.isRequired,
+  title: PropTypes.string.isRequired
 }
 
 export default NavLink;

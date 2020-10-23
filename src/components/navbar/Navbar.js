@@ -6,6 +6,7 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import { IoMdDocument } from 'react-icons/io';
 import NavLink from '../navLink/NavLink';
+import NavSwitch from '../navSwitch/NavSwitch';
 
 const Navbar = ({
   logo, 
@@ -33,11 +34,15 @@ const Navbar = ({
 
   const navToggle = (
     <div className="nav-toggle">
-      <input 
+      <NavSwitch 
+        isDarkMode={isDarkMode}
+        onChange={onSwitchChange}
+      />
+      {/* <input 
         type="checkbox" 
         checked={isDarkMode} 
         onChange={onSwitchChange}
-      />
+      /> */}
     </div>
   );
 
