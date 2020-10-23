@@ -14,6 +14,7 @@ export const GlobalStyles = createGlobalStyle`
     background: ${({ theme }) => theme.background};
     font-family: Tahoma, Helvetica, Arial, Roboto, sans-serif;
     overflow-x: hidden;
+    transition: background 0.2s linear;
   }
 
   .max-width-container {
