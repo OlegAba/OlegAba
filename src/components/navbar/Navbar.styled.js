@@ -6,13 +6,14 @@ export const StyledNavbar = styled.nav`
   .navbar-container {
     display: flex;
     height: 26px;
+    align-items: flex-start;
 
     .nav-logo {
       flex: 1;
       min-width: 0;
 
       img {
-        height: 100%;
+        height: 26px;
       }
     }
 
@@ -25,6 +26,7 @@ export const StyledNavbar = styled.nav`
       a {
         margin: 0 20px;
         text-decoration: none;
+        transition: color 0.1s linear;
         color: ${({ theme }) => theme.button};
 
         &:hover {

@@ -2,14 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { StyledNavbar } from './Navbar.styled';
 import { CgMenu } from 'react-icons/cg';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import { MdEmail } from 'react-icons/md';
-import { IoMdDocument } from 'react-icons/io';
 import NavLink from '../navLink/NavLink';
 import NavSwitch from '../navSwitch/NavSwitch';
 
 const Navbar = ({
-  logo, 
+  logo,
+  links, 
   isMobile, 
   isDarkMode, 
   onSwitchChange, 
@@ -25,10 +23,14 @@ const Navbar = ({
 
   const navLinkButtons = (
     <div className="nav-links">
-      <NavLink Icon={ FaGithub } title="Github" href="#" />
-      <NavLink Icon={ FaLinkedinIn } title="LinkedIn" href="#" />
-      <NavLink Icon={ MdEmail } title="Email" href="#" />
-      <NavLink Icon={ IoMdDocument } title="Resume" href="#" />
+      {links.map((link) => 
+        <NavLink 
+          Icon={ link.icon } 
+          title={ link.title } 
+          href={ link.url } 
+          target="_blank"
+        />
+      )}
     </div>
   );
 
@@ -38,11 +40,6 @@ const Navbar = ({
         isDarkMode={isDarkMode}
         onChange={onSwitchChange}
       />
-      {/* <input 
-        type="checkbox" 
-        checked={isDarkMode} 
-        onChange={onSwitchChange}
-      /> */}
     </div>
   );
 

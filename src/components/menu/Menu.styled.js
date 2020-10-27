@@ -1,26 +1,48 @@
 import styled from 'styled-components';
 
 export const StyledMenu = styled.nav`
-  padding-top: 120px;
-  background: red;
+  background: ${({ theme }) => theme.secondaryBackground};
   transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
   height: 100%;
   width: 250px;
-  text-align: left;
   position: absolute;
   top: 0;
   right: 0;
   transition: transform 0.3s ease-in-out;
   z-index: 3;
 
-  div {
-    display: flex;
-    flex-direction: column;
-    background-color: yellow;
+  .menu-header-container {
+    padding: 20px 24px 20px 24px;
+    
+    .menu-close {
+      color: ${({ theme }) => theme.title};
+      float: right;
+    }
   }
 
-  a {
-    text-decoration: none;
-    transition: color 0.3s linear;
+  .menu-buttons-container {
+    margin-top: 70px;
+    display: inline-block;
+    width: 100%;
+    background-color: ${({ theme }) => theme.background};
+
+    .menu-link {
+      display: flex;
+      margin-bottom: 2px;
+      padding: 20px 0 20px 0;
+      justify-content: center;
+      background-color: ${({ theme }) => theme.secondaryBackground};
+    }
+
+    a {
+      text-decoration: none;
+      transition: color 0.1s linear;  
+      height: 30px;
+      color: ${({ theme }) => theme.button};
+
+      &:hover {
+        color: ${({ theme }) => theme.buttonHover};
+      }
+    }
   }
 `;
