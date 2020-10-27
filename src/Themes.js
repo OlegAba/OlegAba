@@ -1,10 +1,10 @@
 export const lightTheme = {
-    body: '#8D8D8D',
-    title: '#F0F2F3',
+    body: '#7b7b80',
+    title: '#1b1b1d',
     button: '#707070',
     buttonHover: '#F0F2F3',
-    background: 'white',
-    secondaryBackground: '#171717',
+    background: '#fafafd',
+    secondaryBackground: '#f3f3f6',
     accent: '#E16651'
 }
 

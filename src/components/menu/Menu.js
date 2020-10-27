@@ -1,33 +1,60 @@
 import React from 'react';
-import { bool } from 'prop-types';
+import PropTypes from 'prop-types';
 import { StyledMenu } from './Menu.styled';
+import NavLink from '../navLink/NavLink';
+import { CgClose } from 'react-icons/cg';
+import NavSwitch from '../navSwitch/NavSwitch';
 
-const Menu = ({ open, ...props }) => {
+const Menu = ({ 
+  open, 
+  links,
+  isDarkMode, 
+  onSwitchChange,
+  onButtonClick, 
+  ...props 
+}) => {
   
   const isHidden = open ? true : false;
-  const tabIndex = isHidden ? 0 : -1;
 
   return (
     <StyledMenu open={open} aria-hidden={!isHidden} {...props}>
-      <div>
-        <a href="/" tabIndex={tabIndex}>
-          About us
-        </a>
+      <div className="menu-header-container">
+        <CgClose 
+          className="menu-close"
+          size="25px"
+          onClick={onButtonClick}
+        />
+      </div>
 
-        <a href="/" tabIndex={tabIndex}>
-          Pricing
-        </a>
+      <div className="menu-buttons-container">
+        {links.map((link) => 
+            <div className="menu-link">
+              <NavLink 
+              Icon={ link.icon } 
+              title={ link.title } 
+              href={ link.url } 
+              target="_blank"
+            />
+            </div>
+         )}
 
-        <a href="/" tabIndex={tabIndex}>
-          Contact
-        </a>
+        <div className="menu-link">
+          <NavSwitch 
+            isDarkMode={isDarkMode}
+            onChange={onSwitchChange}
+          />
+        </div>
       </div>
     </StyledMenu>
   )
 }
 
 Menu.propTypes = {
-  open: bool.isRequired,
+  open: PropTypes.bool.isRequired,
+  links: PropTypes.array.isRequired,
+  isDarkMode: PropTypes.bool.isRequired,
+  onSwitchChange: PropTypes.func.isRequired,
+  onButtonClick: PropTypes.func.isRequired,
 }
 
 export default Menu;

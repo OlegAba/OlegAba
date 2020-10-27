@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from '../GlobalStyles';
-import { lightTheme, darkTheme } from '../Themes';
+import { lightTheme, darkTheme } from '../../Themes';
 import lightLogo from '../../assets/images/logo-light.png';
 import darkLogo from '../../assets/images/logo-dark.png';
 import OutsideAlterter from '../OutsideAlerter'; 
 import Navbar from '../navbar/Navbar';
 import Project from './../project/Project';
 import Menu from './../menu/Menu';
-//import './App.scss';
+import { socialLinks } from '../../Constants';
 
 class App extends Component {
 
@@ -18,12 +18,13 @@ class App extends Component {
     this.state = {
       isMobile: false,
       isDarkMode: true,
-      menuOpen: false
+      menuOpen: true
     };
 
     this.updateWidth = this.updateWidth.bind(this);
     this.handleThemeSwitch = this.handleThemeSwitch.bind(this);
     this.handleMenuButton = this.handleMenuButton.bind(this);
+    this.handleCloseButton = this.handleCloseButton.bind(this);
     this.handleClickOutside = this.handleClickOutside.bind(this);
   }
 
@@ -55,6 +56,13 @@ class App extends Component {
     }
   }
 
+  handleCloseButton(event) {
+    let menuOpen = this.state.menuOpen;
+    if (menuOpen) {
+      this.setState({ menuOpen: false });
+    }
+  }
+
   handleClickOutside() {
     let menuOpen = this.state.menuOpen
     if (menuOpen) { this.setState({ menuOpen: false }) };
@@ -71,6 +79,7 @@ class App extends Component {
           <div className="max-width-container">
             <Navbar
               logo={logo}
+              links={socialLinks}
               isMobile={this.state.isMobile}
               isDarkMode={this.state.isDarkMode} 
               onSwitchChange={this.handleThemeSwitch}
@@ -78,7 +87,13 @@ class App extends Component {
             />
 
             <OutsideAlterter handleClickOutside={this.handleClickOutside}>
-              <Menu open={this.state.menuOpen} />
+              <Menu 
+                open={this.state.menuOpen}
+                links={socialLinks}
+                isDarkMode={this.state.isDarkMode} 
+                onSwitchChange={this.handleThemeSwitch}
+                onButtonClick={this.handleCloseButton}
+              />
             </OutsideAlterter>
           </div>
           
