@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledMenu = styled.nav`
-  background: ${({ theme }) => theme.secondaryBackground};
+  background: ${({ theme }) => theme.backgroundActive};
   transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
   height: 100%;
   width: 250px;
@@ -31,7 +31,7 @@ export const StyledMenu = styled.nav`
       margin-bottom: 2px;
       padding: 20px 0 20px 0;
       justify-content: center;
-      background-color: ${({ theme }) => theme.secondaryBackground};
+      background-color: ${({ theme }) => theme.backgroundActive};
     }
 
     a {

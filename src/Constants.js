@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import { IoMdDocument } from 'react-icons/io';
 
-import headerImage from './assets/images/InstaQR-big.png';
+import secondaryImage from './assets/images/projects/InstaQR/instaqr-1.png';
 
 export const socialLinks = [
     {
@@ -29,8 +29,15 @@ export const socialLinks = [
 
 export const mainProject = {
     title: "InstaQR",
-    mainImage: headerImage,
-    secondaryImages: [headerImage, headerImage, headerImage, headerImage, headerImage, headerImage],
+    mainImage: "images/projects/InstaQR/instaqr-1.png",
+    secondaryImages: [
+        "images/projects/InstaQR/instaqr-2.png", 
+        "images/projects/InstaQR/instaqr-3.png", 
+        "images/projects/InstaQR/instaqr-4.png", 
+        "images/projects/InstaQR/instaqr-5.png", 
+        "images/projects/InstaQR/instaqr-6.png", 
+        "images/projects/InstaQR/instaqr-7.png"
+    ],
     about: "Tipsy is a tip calculator that is the first app I built on my own, and it’s the first app I put on the app store. I definitely met some challenges when building it, but I was able to push through with some good use of DuckDuckGo and Google, as well as some help from friends that were generous with their time and patience. It was a lot of fun making Tipsy. I gained experience with some of Apple’s cool frameworks and features.",
     learned: [
         "How to use App Store Connect",
