@@ -27,13 +27,15 @@ const Menu = ({
       </div>
 
       <div className="menu-buttons-container">
-        {links.map((link) => 
-            <div className="menu-link">
+        {links.map((link, index) => 
+            <div 
+              className="menu-link" 
+              key={index}>
               <NavLink 
-              Icon={ link.icon } 
-              title={ link.title } 
-              href={ link.url } 
-              target="_blank"
+                Icon={ link.icon } 
+                title={ link.title } 
+                href={ link.url } 
+                target="_blank"
             />
             </div>
          )}

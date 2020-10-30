@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
 import { ThemeProvider } from 'styled-components';
-import { GlobalStyles } from '../GlobalStyles';
-import { lightTheme, darkTheme } from '../../Themes';
+import { GlobalStyles } from '../../styles/GlobalStyles';
+import { lightTheme, darkTheme } from '../../styles/Themes';
+import { device } from '../../styles/Device';
 import lightLogo from '../../assets/images/logo-light.png';
 import darkLogo from '../../assets/images/logo-dark.png';
 import OutsideAlterter from '../OutsideAlerter'; 
 import Navbar from '../navbar/Navbar';
-import Project from './../project/Project';
+import MainProject from '../mainProject/MainProject';
+//import Project from './../project/Project';
 import Menu from './../menu/Menu';
-import { socialLinks } from '../../Constants';
+import { socialLinks, mainProject } from '../../Constants';
+import Lightbox from 'react-image-lightbox';
+import 'react-image-lightbox/style.css';
 
 class App extends Component {
 
@@ -18,7 +22,9 @@ class App extends Component {
     this.state = {
       isMobile: false,
       isDarkMode: true,
-      menuOpen: true
+      menuOpen: false,
+      imageDisplayOpen: false,
+      imageIndex: 0,
     };
 
     this.updateWidth = this.updateWidth.bind(this);
@@ -26,6 +32,7 @@ class App extends Component {
     this.handleMenuButton = this.handleMenuButton.bind(this);
     this.handleCloseButton = this.handleCloseButton.bind(this);
     this.handleClickOutside = this.handleClickOutside.bind(this);
+    this.handleImageClick = this.handleImageClick.bind(this);
   }
 
   componentDidMount() {
@@ -68,9 +75,18 @@ class App extends Component {
     if (menuOpen) { this.setState({ menuOpen: false }) };
   }
 
+  handleImageClick(index) {
+    this.setState({
+      imageDisplayOpen: true,
+      imageIndex: index
+    })
+  }
+
   render() {
     const theme = this.state.isDarkMode ? darkTheme : lightTheme;
     const logo = this.state.isDarkMode ? lightLogo : darkLogo;
+    const { imageDisplayOpen, imageIndex } = this.state;
+    const images = mainProject.secondaryImages
     
     return (
       <ThemeProvider theme={theme}>
@@ -95,7 +111,36 @@ class App extends Component {
                 onButtonClick={this.handleCloseButton}
               />
             </OutsideAlterter>
+
+            <div className="main-container">
+              <MainProject
+                device={device}
+                project={mainProject}
+                handleImageClick={this.handleImageClick}
+              />
+            </div>
+
           </div>
+
+          {imageDisplayOpen && (
+            <Lightbox
+              mainSrc={images[imageIndex]}
+              nextSrc={images[(imageIndex + 1) % images.length]}
+              prevSrc={images[(imageIndex + images.length - 1) % images.length]}
+              onCloseRequest={() => this.setState({ imageDisplayOpen: false })}
+              onMovePrevRequest={() =>
+                this.setState({
+                  imageIndex: (imageIndex + images.length - 1) % images.length,
+                })
+              }
+              onMoveNextRequest={() =>
+                this.setState({
+                  imageIndex: (imageIndex + 1) % images.length,
+                })
+              }
+              imagePadding={this.state.isMobile ? 45 : 10}
+            />
+          )}
           
           {/* <div className="App">
             <div className="header">

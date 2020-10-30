@@ -17,14 +17,18 @@ const Navbar = ({
 
   const navLogo = (
     <div className="nav-logo">
-      <img src={logo} />
+      <img 
+        src={logo} 
+        alt="logo"
+      />
     </div>
   );
 
   const navLinkButtons = (
     <div className="nav-links">
-      {links.map((link) => 
-        <NavLink 
+      {links.map((link, index) => 
+        <NavLink
+          key={index} 
           Icon={ link.icon } 
           title={ link.title } 
           href={ link.url } 
@@ -77,6 +81,7 @@ const Navbar = ({
 
 Navbar.propTypes = {
   logo: PropTypes.node.isRequired,
+  links: PropTypes.array.isRequired,
   isMobile: PropTypes.bool.isRequired,
   isDarkMode: PropTypes.bool.isRequired,
   onSwitchChange: PropTypes.func.isRequired,

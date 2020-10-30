@@ -16,7 +16,7 @@ const NavSwitch = ({isDarkMode, onChange, ...props }) => {
             checked={isDarkMode}
         />
 
-        <label for="checkbox" className="label">
+        <label htmlFor="checkbox" className="label">
         <FiSun className="icon-sun" />
         <BsMoon className="icon-moon" />
         <div className="ball" />

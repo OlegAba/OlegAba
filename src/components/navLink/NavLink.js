@@ -13,7 +13,7 @@ const NavLink = ({Icon, title, ...props }) => {
 }
 
 NavLink.propTypes = {
-  Icon: PropTypes.node.isRequired,
+  Icon: PropTypes.elementType.isRequired,
   title: PropTypes.string.isRequired
 }
 
