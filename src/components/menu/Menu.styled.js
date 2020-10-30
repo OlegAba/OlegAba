@@ -5,7 +5,7 @@ export const StyledMenu = styled.nav`
   transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
   height: 100%;
   width: 250px;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   transition: transform 0.3s ease-in-out;

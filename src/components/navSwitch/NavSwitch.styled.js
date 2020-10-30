@@ -7,7 +7,7 @@ export const StyledNavSwitch = styled.div`
     }
 
     .label {
-        background-color: ${({ theme }) => theme.button};
+        background-color: ${({ theme }) => theme.accent};
         display: flex;
         align-items: center;
         justify-content: space-between;
