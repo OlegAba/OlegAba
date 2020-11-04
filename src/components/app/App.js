@@ -8,9 +8,9 @@ import darkLogo from '../../assets/images/logo-dark.png';
 import OutsideAlterter from '../OutsideAlerter'; 
 import Navbar from '../navbar/Navbar';
 import MainProject from '../mainProject/MainProject';
-//import Project from './../project/Project';
+import OtherProjects from '../otherProjects/OtherProjects';
 import Menu from './../menu/Menu';
-import { socialLinks, mainProject } from '../../Constants';
+import { socialLinks, mainProject, otherProjects } from '../../Constants';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 
@@ -120,6 +120,13 @@ class App extends Component {
               />
             </div>
 
+            <div className="other-projects-container">
+              <OtherProjects
+                device={device}
+                projects={otherProjects}
+              />
+            </div>
+
           </div>
 
           {imageDisplayOpen && (
@@ -141,27 +148,6 @@ class App extends Component {
               imagePadding={this.state.isMobile ? 45 : 10}
             />
           )}
-          
-          {/* <div className="App">
-            <div className="header">
-              <Navbar 
-                isMobile={this.state.isMobile}
-                isDarkMode={this.state.isDarkMode} 
-                onSwitchChange={this.handleThemeSwitch}
-                onButtonClick={this.handleMenuButton}
-              />
-            </div>
-
-            <OutsideAlterter handleClickOutside={this.handleClickOutside}>
-              <Menu open={this.state.menuOpen} />
-            </OutsideAlterter>
-
-            <div className="main">
-              <div className="max-width-container">
-                <Project />
-              </div>
-            </div>
-          </div> */}
         </>
       </ThemeProvider>
     );

@@ -29,14 +29,14 @@ export const socialLinks = [
 
 export const mainProject = {
     title: "InstaQR",
-    mainImage: "images/projects/InstaQR/instaqr-1.png",
+    mainImage: "images/InstaQR/instaqr-1.png",
     secondaryImages: [
-        "images/projects/InstaQR/instaqr-2.png", 
-        "images/projects/InstaQR/instaqr-3.png", 
-        "images/projects/InstaQR/instaqr-4.png", 
-        "images/projects/InstaQR/instaqr-5.png", 
-        "images/projects/InstaQR/instaqr-6.png", 
-        "images/projects/InstaQR/instaqr-7.png"
+        "images/InstaQR/instaqr-2.png", 
+        "images/InstaQR/instaqr-3.png", 
+        "images/InstaQR/instaqr-4.png", 
+        "images/InstaQR/instaqr-5.png", 
+        "images/InstaQR/instaqr-6.png", 
+        "images/InstaQR/instaqr-7.png"
     ],
     about: "Tipsy is a tip calculator that is the first app I built on my own, and it’s the first app I put on the app store. I definitely met some challenges when building it, but I was able to push through with some good use of DuckDuckGo and Google, as well as some help from friends that were generous with their time and patience. It was a lot of fun making Tipsy. I gained experience with some of Apple’s cool frameworks and features.",
     learned: [
@@ -60,3 +60,24 @@ export const mainProject = {
         url: "https://github.com/OlegAba"
     }
 }
+
+export const otherProjects = [
+    {
+        title: "LPLivePhotoGenerator",
+        subtitle: "Swift Library",
+        image: "images/Projects/LPLivePhotoGenerator.png",
+        url: ""
+    },
+    {
+        title: "SuperSnapcode",
+        subtitle: "iOS Application",
+        image: "images/Projects/SuperSnapcode.png",
+        url: ""
+    },
+    {
+        title: "PodcastExplorer",
+        subtitle: "iOS Application",
+        image: "images/Projects/PodcastExplorer.png",
+        url: ""
+    }
+]

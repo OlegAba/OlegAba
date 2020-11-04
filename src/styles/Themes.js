@@ -6,7 +6,8 @@ export const lightTheme = {
     background: '#fafafd',
     secondaryBackground: '#f3f3f6',
     backgroundActive: '#e5e5ea',
-    accent: '#007aff'
+    accent: '#007aff',
+    secondaryAccent: '#c0d9f5'
 }
 
 export const darkTheme = {
@@ -17,5 +18,6 @@ export const darkTheme = {
     background: '#141414',
     secondaryBackground: '#171717',
     backgroundActive: '#1b1b1b',
-    accent: '#0a84ff'
+    accent: '#0a84ff',
+    secondaryAccent: '#152a44'
 }
