@@ -11,8 +11,18 @@ export const StyledOtherProjects = styled.div`
     -ms-grid-rows: auto;
     grid-template-rows: auto;
 
+    a, a:hover, a:active, a:visited, a:focus {
+      text-decoration:none;
+    }
+
     .projects-grid-col {
-      padding: 20px 20px 0 20px;
+      padding-top: 20px;
+      position: relative;
+      overflow: hidden;
+
+      &:hover {
+        background-color: ${({ theme }) => theme.backgroundActive};
+      }
 
       h4 {
           margin-top: 10px;
@@ -20,12 +30,15 @@ export const StyledOtherProjects = styled.div`
           text-align: center;
       }
 
-      img {
-          padding: 20px 20px 0 20px;
-          display: block;
-          width: 100%;
-          margin-right: auto;
-          margin-left: auto;
+      .image-container {
+        padding: 20px 40px 0 40px;
+        margin-right: auto;
+        margin-left: auto;
+
+        img {
+          max-width: 100%;
+          height: auto;
+        }
       }
     }
   }

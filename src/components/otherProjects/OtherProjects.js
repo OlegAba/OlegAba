@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { StyledOtherProjects } from './OtherProjects.styled';
-import phoneThumbnail from '../../assets/images/projects/InstaQR/instaqr-2.png';
 
 const OtherProjects = ({
   device,
@@ -13,12 +12,17 @@ const OtherProjects = ({
     <StyledOtherProjects device={device} {...props}>
         <div className="projects-grid">
           {projects.map((project, index) =>
-            <div
+            <a
+              href={project.url}
+              target="_blank"
               key={index} 
               className="box-section projects-grid-col">
+
               <h4>{project.title}</h4>
-              <img src={project.image} />
-            </div>
+              <div className="image-container">
+                <img src={project.image} />
+              </div>
+            </a>
           )}
         </div>
     </StyledOtherProjects>

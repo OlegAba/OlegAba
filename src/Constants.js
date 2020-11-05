@@ -64,19 +64,16 @@ export const mainProject = {
 export const otherProjects = [
     {
         title: "LPLivePhotoGenerator",
-        subtitle: "Swift Library",
         image: "images/Projects/LPLivePhotoGenerator.png",
-        url: ""
+        url: "https://github.com/OlegAba/LPLivePhotoGenerator"
     },
     {
         title: "SuperSnapcode",
-        subtitle: "iOS Application",
         image: "images/Projects/SuperSnapcode.png",
         url: ""
     },
     {
         title: "PodcastExplorer",
-        subtitle: "iOS Application",
         image: "images/Projects/PodcastExplorer.png",
         url: ""
     }
