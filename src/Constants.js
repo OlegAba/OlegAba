@@ -2,8 +2,6 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import { IoMdDocument } from 'react-icons/io';
 
-import secondaryImage from './assets/images/projects/InstaQR/instaqr-1.png';
-
 export const socialLinks = [
     {
         title: "Github",

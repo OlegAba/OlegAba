@@ -136,6 +136,7 @@ export const StyledMainProject = styled.div`
     height: 40px;
     display: flex;
     justify-content: space-around;
+    padding: 0 5px 0 5px;
 
     a {
       transition: all .1s linear;
