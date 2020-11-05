@@ -15,12 +15,16 @@ const OtherProjects = ({
             <a
               href={project.url}
               target="_blank"
+              rel="noopener noreferrer"
               key={index} 
               className="box-section projects-grid-col">
 
               <h4>{project.title}</h4>
               <div className="image-container">
-                <img src={project.image} />
+                <img 
+                  src={project.image}
+                  alt={project.title} 
+                />
               </div>
             </a>
           )}
@@ -31,7 +35,7 @@ const OtherProjects = ({
 
 OtherProjects.propTypes = {
   device: PropTypes.object.isRequired,
-  projects: PropTypes.object.isRequired,
+  projects: PropTypes.array.isRequired,
 }
 
 export default OtherProjects;

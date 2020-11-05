@@ -9,6 +9,7 @@ import OutsideAlterter from '../OutsideAlerter';
 import Navbar from '../navbar/Navbar';
 import MainProject from '../mainProject/MainProject';
 import OtherProjects from '../otherProjects/OtherProjects';
+import Footer from '../footer/Footer';
 import Menu from './../menu/Menu';
 import { socialLinks, mainProject, otherProjects } from '../../Constants';
 import Lightbox from 'react-image-lightbox';
@@ -124,6 +125,14 @@ class App extends Component {
               <OtherProjects
                 device={device}
                 projects={otherProjects}
+              />
+            </div>
+
+            <div className="footer-container">
+              <Footer
+                device={device} 
+                copyright="© 2020 Oleg Abalonski - All rights reserved"
+                links={socialLinks}
               />
             </div>
 

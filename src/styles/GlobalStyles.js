@@ -57,6 +57,10 @@ export const GlobalStyles = createGlobalStyle`
     margin-top: 80px;
   }
 
+  .footer-container {
+    margin-top: 80px;
+  }
+
   .box-section {
     background-color: ${({ theme }) => theme.secondaryBackground};
     border-radius: 2px;

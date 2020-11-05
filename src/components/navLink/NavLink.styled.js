@@ -8,6 +8,6 @@ export const StyledNavLink = styled.a`
     font-size: 14px;
 
     .navLink-icon {
-        margin-right: 10px;
+        margin-right: ${({ hasTitle }) => hasTitle ? '10px' : '0'};
     }
 `;

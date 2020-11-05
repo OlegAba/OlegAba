@@ -4,8 +4,10 @@ import { StyledNavLink } from './NavLink.styled';
 
 const NavLink = ({Icon, title, ...props }) => {
 
+  const hasTitle = title === undefined ? false : true;
+
   return (
-    <StyledNavLink {...props}>
+    <StyledNavLink hasTitle={hasTitle} {...props}>
       <Icon className="navLink-icon" size="20px" />
       {title}
     </StyledNavLink>
