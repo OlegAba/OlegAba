@@ -53,6 +53,10 @@ export const GlobalStyles = createGlobalStyle`
     padding-bottom: 36px;
   }
 
+  .other-projects-container {
+    margin-top: 80px;
+  }
+
   .box-section {
     background-color: ${({ theme }) => theme.secondaryBackground};
     border-radius: 2px;

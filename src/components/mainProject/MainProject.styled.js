@@ -143,11 +143,14 @@ export const StyledMainProject = styled.div`
 
     .linkButton {
       color: ${({ theme }) => theme.accent};
-      background-color: rgba(10, 132, 255, 0.2);
+      background-color: ${({ theme }) => theme.secondaryAccent};
       text-decoration: none;
       padding: 10px;
       margin-left: 20px;
       border-radius: 5px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: ${({ theme }) => theme.accent};
       transition: all .1s linear;
       -webkit-backface-visibility: hidden;
       -moz-backface-visibility:    hidden;
