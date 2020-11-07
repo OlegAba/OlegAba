@@ -76,12 +76,20 @@ export const StyledMainProject = styled.div`
     grid-template-columns: 0.5fr 1fr;
     -ms-grid-rows: auto;
     grid-template-rows: auto;
+
+    p {
+      padding-bottom: 20px;
+    }
   }
 
   @media ${({ device }) => device.tablet} {
     .info-grid {
       -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+
+      p {
+        padding-bottom: 0;
+      }
     }
   }
 
@@ -128,15 +136,10 @@ export const StyledMainProject = styled.div`
     }
   }
 
-  .tech-container {
-    margin-top: 20px;
-  }
-
   .button-grid {
     height: 40px;
     display: flex;
     justify-content: space-around;
-    padding: 0 5px 0 5px;
 
     a {
       transition: all .1s linear;
