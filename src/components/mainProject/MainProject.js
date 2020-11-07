@@ -37,16 +37,6 @@ const MainProject = ({
     </ul>
   );
 
-  const technologiesSection = (
-    <ul>
-      {project.technologies.map((text, index) => 
-        <li key={index}>
-          <span>{text}</span>
-        </li>      
-      )}
-    </ul>
-  );
-
   return (
     <StyledMainProject device={device} {...props}>
       <h1>{project.title}</h1>
@@ -85,13 +75,8 @@ const MainProject = ({
         </div>
         
         <div className="box-section info-grid-col">
-          <h4>Things I Learned:</h4>
+          <h4>Accomplishments</h4>
           {learnedSection}
-
-          <div className="tech-container">
-            <h4>Technologies Used:</h4>
-            {technologiesSection}
-          </div>
         </div>
       </div>
 

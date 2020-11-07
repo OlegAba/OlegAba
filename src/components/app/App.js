@@ -3,15 +3,13 @@ import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from '../../styles/GlobalStyles';
 import { lightTheme, darkTheme } from '../../styles/Themes';
 import { device } from '../../styles/Device';
-import lightLogo from '../../assets/images/logo-light.png';
-import darkLogo from '../../assets/images/logo-dark.png';
 import OutsideAlterter from '../OutsideAlerter'; 
 import Navbar from '../navbar/Navbar';
 import MainProject from '../mainProject/MainProject';
 import OtherProjects from '../otherProjects/OtherProjects';
 import Footer from '../footer/Footer';
 import Menu from './../menu/Menu';
-import { socialLinks, mainProject, otherProjects } from '../../Constants';
+import { socialLinks, mainProject, otherProjects } from '../../Data';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 
@@ -85,7 +83,7 @@ class App extends Component {
 
   render() {
     const theme = this.state.isDarkMode ? darkTheme : lightTheme;
-    const logo = this.state.isDarkMode ? lightLogo : darkLogo;
+    const logo = this.state.isDarkMode ? 'images/logo-light.png' : 'images/logo-dark.png';
     const { imageDisplayOpen, imageIndex } = this.state;
     const images = mainProject.secondaryImages
     
