@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
 import { ThemeProvider } from 'styled-components';
-import { GlobalStyles } from '../../styles/GlobalStyles';
-import { lightTheme, darkTheme } from '../../styles/Themes';
-import { device } from '../../styles/Device';
-import OutsideAlterter from '../OutsideAlerter'; 
-import Navbar from '../navbar/Navbar';
-import MainProject from '../mainProject/MainProject';
-import OtherProjects from '../otherProjects/OtherProjects';
-import Footer from '../footer/Footer';
-import Menu from './../menu/Menu';
-import { socialLinks, mainProject, otherProjects } from '../../Data';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
+
+import { GlobalStyles } from './styles/GlobalStyles';
+import { lightTheme, darkTheme } from './styles/Themes';
+import { device } from './styles/Device';
+import { socialLinks, mainProject, otherProjects } from './Data';
+
+import OutsideAlterter from './components/OutsideAlerter'; 
+import Navbar from './components/navbar/Navbar';
+import MainProject from './components/mainProject/MainProject';
+import OtherProjects from './components/otherProjects/OtherProjects';
+import Footer from './components/footer/Footer';
+import Menu from './components/menu/Menu';
 
 class App extends Component {
 
@@ -25,13 +27,6 @@ class App extends Component {
       imageDisplayOpen: false,
       imageIndex: 0,
     };
-
-    this.updateWidth = this.updateWidth.bind(this);
-    this.handleThemeSwitch = this.handleThemeSwitch.bind(this);
-    this.handleMenuButton = this.handleMenuButton.bind(this);
-    this.handleCloseButton = this.handleCloseButton.bind(this);
-    this.handleClickOutside = this.handleClickOutside.bind(this);
-    this.handleImageClick = this.handleImageClick.bind(this);
   }
 
   componentDidMount() {
@@ -43,38 +38,38 @@ class App extends Component {
     window.removeEventListener("resize", this.updateWidth);
   }
 
-  updateWidth() {
+  updateWidth = () => {
     let windowWidth = typeof window !== "undefined" ? window.innerWidth : 0;
     let isMobile = windowWidth < 960;
     let menuOpen = isMobile ? this.state.menuOpen : false
     this.setState({ isMobile, menuOpen });
   }
 
-  handleThemeSwitch(event) {
+  handleThemeSwitch = (event) => {
     let isDarkMode = event.target.checked;
     this.setState({ isDarkMode });
   }
 
-  handleMenuButton(event) {
+  handleMenuButton = (event) => {
     let menuNotOpen = !this.state.menuOpen;
     if (menuNotOpen) {
       this.setState({ menuOpen: true });
     }
   }
 
-  handleCloseButton(event) {
+  handleCloseButton = (event) => {
     let menuOpen = this.state.menuOpen;
     if (menuOpen) {
       this.setState({ menuOpen: false });
     }
   }
 
-  handleClickOutside() {
+  handleClickOutside = () => {
     let menuOpen = this.state.menuOpen
     if (menuOpen) { this.setState({ menuOpen: false }) };
   }
 
-  handleImageClick(index) {
+  handleImageClick = (index) => {
     this.setState({
       imageDisplayOpen: true,
       imageIndex: index
