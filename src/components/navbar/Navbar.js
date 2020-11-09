@@ -33,6 +33,7 @@ const Navbar = ({
           title={ link.title } 
           href={ link.url } 
           target="_blank"
+          rel="noopener noreferrer"
         />
       )}
     </div>

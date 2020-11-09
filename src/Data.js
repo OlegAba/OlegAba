@@ -21,7 +21,7 @@ export const socialLinks = [
     {
         title: "Resume",
         icon: IoMdDocument,
-        url: "https://www.OlegAba.com/resume.pdf"
+        url: "http://www.OlegAba.com/resume.pdf"
     }
 ]
 
