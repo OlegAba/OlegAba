@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
+  
   * {
     margin: 0;
     padding: 0;
@@ -14,7 +15,6 @@ export const GlobalStyles = createGlobalStyle`
     background: ${({ theme }) => theme.background};
     color: ${({ theme }) => theme.body};
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    //overflow-x: hidden;
     transition: background 0.2s linear;
   }
 
