@@ -122,6 +122,7 @@ export const StyledMainProject = styled.div`
     margin-inline-end: 0px;
     padding-inline-start: 40px;
     margin-top: 5px;
+    line-height: 1.5;
   }
 
   li {
