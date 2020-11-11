@@ -26,8 +26,10 @@ export const GlobalStyles = createGlobalStyle`
     font-size: 62px;
   }
 
-  h2 {
-    font-size: 42px;
+  @media ${({ device }) => device.tablet} {
+    h1 {
+      font-size: 40px;
+    }
   }
 
   h4 {

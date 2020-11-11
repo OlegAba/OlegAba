@@ -6,8 +6,9 @@ import 'react-image-lightbox/style.css';
 import { GlobalStyles } from './styles/GlobalStyles';
 import { lightTheme, darkTheme } from './styles/Themes';
 import { device } from './styles/Device';
-import { socialLinks, mainProject, otherProjects } from './Data';
+import { socialLinks, about, mainProject, otherProjects } from './Data';
 
+import About from './components/about/About';
 import OutsideAlterter from './components/OutsideAlerter'; 
 import Navbar from './components/navbar/Navbar';
 import MainProject from './components/mainProject/MainProject';
@@ -85,7 +86,7 @@ class App extends Component {
     return (
       <ThemeProvider theme={theme}>
         <>
-        <GlobalStyles />
+        <GlobalStyles device={device} />
           <div className="max-width-container">
             <Navbar
               logo={logo}
@@ -105,6 +106,13 @@ class App extends Component {
                 onButtonClick={this.handleCloseButton}
               />
             </OutsideAlterter>
+
+            <div className="main-container">
+              <About 
+                about={about}
+                device={device}
+              />
+            </div>
 
             <div className="main-container">
               <MainProject
@@ -147,7 +155,6 @@ class App extends Component {
                   imageIndex: (imageIndex + 1) % images.length,
                 })
               }
-              imagePadding={this.state.isMobile ? 45 : 10}
             />
           )}
         </>
