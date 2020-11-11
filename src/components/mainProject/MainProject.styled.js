@@ -8,6 +8,12 @@ export const StyledMainProject = styled.div`
     margin-bottom: -40px;
   }
 
+  @media ${({ device }) => device.tablet} {
+    h1 {
+      margin-bottom: -25px;
+    }
+  }
+
   .image-container {
     padding-top: 80px;
     padding-bottom: 80px;

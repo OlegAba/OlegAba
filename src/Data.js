@@ -25,6 +25,18 @@ export const socialLinks = [
     }
 ]
 
+export const about = {
+    title: "Oleg Abalonski",
+    image: './images/avatar.png',
+    description: `As an individual, I bring a strong skill set in technologies related 
+    to Web and iOS development. Apart from utilizing several programming languages, I 
+    have experience working with version control, network calls, API’s, third-party 
+    libraries, frameworks, relational databases, multithreading, and an MVC & MVVM design 
+    pattern. I can adapt to a fluid and dynamic development environment; I am comfortable 
+    working with any computer/mobile OS and can transfer my skillset to any programming 
+    language or technology that is required.`
+}
+
 export const mainProject = {
     title: "InstaQR",
     mainImage: "images/InstaQR/instaqr-1.png",
