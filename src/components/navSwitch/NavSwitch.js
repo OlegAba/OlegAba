@@ -8,26 +8,26 @@ const NavSwitch = ({isDarkMode, onChange, ...props }) => {
 
   return (
     <StyledNavSwitch {...props}>
-        <input 
-            type="checkbox" 
-            className="checkbox" 
-            id="checkbox" 
-            onChange={onChange}
-            checked={isDarkMode}
-        />
+      <input 
+        type="checkbox" 
+        className="checkbox" 
+        id="checkbox" 
+        onChange={onChange}
+        checked={isDarkMode}
+      />
 
-        <label htmlFor="checkbox" className="label">
-        <FiSun className="icon-sun" />
-        <BsMoon className="icon-moon" />
-        <div className="ball" />
-        </label>
+      <label htmlFor="checkbox" className="label">
+      <FiSun className="icon-sun" />
+      <BsMoon className="icon-moon" />
+      <div className="ball" />
+      </label>
     </StyledNavSwitch>
   )
 }
 
 NavSwitch.propTypes = {
-    isDarkMode: PropTypes.bool.isRequired,
-    onChange: PropTypes.func.isRequired,
+  isDarkMode: PropTypes.bool.isRequired,
+  onChange: PropTypes.func.isRequired,
 }
 
 export default NavSwitch;

@@ -1,7 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
-  
   * {
     margin: 0;
     padding: 0;
@@ -24,10 +23,15 @@ export const GlobalStyles = createGlobalStyle`
 
   h1 {
     font-size: 62px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    margin-bottom: -40px;
   }
 
   @media ${({ device }) => device.tablet} {
     h1 {
+      margin-bottom: -25px;
       font-size: 40px;
     }
   }
@@ -44,18 +48,40 @@ export const GlobalStyles = createGlobalStyle`
     font-weight: 300;
   }
 
+  ul {
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    margin-top: 5px;
+    line-height: 1.5;
+
+    li {
+      font-size: 16px;
+      margin-bottom: 6px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      padding-left: 12px;
+      color: ${({ theme }) => theme.accent};
+
+      span {
+        color: ${({ theme }) => theme.body};
+      }
+    }
+  }
+
   .max-width-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px 0 24px;
   }
 
-  .main-container {
+  .section-container {
     padding-top: 80px;
     padding-bottom: 36px;
   }
 
-  .other-projects-container {
+  .projects-container {
     margin-top: 80px;
   }
 
@@ -66,5 +92,39 @@ export const GlobalStyles = createGlobalStyle`
   .box-section {
     background-color: ${({ theme }) => theme.secondaryBackground};
     border-radius: 2px;
+  }
+
+  .image-container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    img {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  .grid-column {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 48px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  @media ${({ device }) => device.mobileL} {
+    .grid-column {
+      padding: 24px;
+    }
   }
 `;

@@ -11,16 +11,15 @@ const About = ({
   return (
     <StyledAbout device={device} {...props}>
       <h1>{about.title}</h1>
-
       <div className="box-section image-container">
         <img 
-          src={about.image} 
-          alt="avatar"
+          src={about.image.source} 
+          alt={about.image.title}
         />
       </div>
 
       <div className="info-grid">
-        <div className="box-section info-grid-col">
+        <div className="box-section grid-column">
           <div>
             <h4>About</h4>
             <p>{about.description}</p>

@@ -16,12 +16,15 @@ export const StyledOtherProjects = styled.div`
     }
 
     .projects-grid-col {
-      padding-top: 20px;
       position: relative;
       overflow: hidden;
 
       &:hover {
         background-color: ${({ theme }) => theme.backgroundActive};
+      }
+
+      .link-container {
+        padding-top: 20px;
       }
 
       h4 {

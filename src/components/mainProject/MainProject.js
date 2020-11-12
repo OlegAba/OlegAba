@@ -20,7 +20,7 @@ const MainProject = ({
         >
           <img 
             src={image} 
-            alt="Secondary project"
+            alt={index + "-preview"}
           />
         </div>
       )}
@@ -49,39 +49,40 @@ const MainProject = ({
       </div>
 
       <div className="info-grid">
-        <div className="box-section info-grid-col">
+        <div className="box-section grid-column">
           <div>
             <h4>About</h4>
             <p>{project.about}</p>
           </div>
 
-          <div className="button-grid">
-            {/* TODO: Move href and image srcs to prop */}
-            <a href="https://apps.apple.com/us/app/instaqr-live-wallpaper-maker/id1514732973?ign-mpt=uo%3D4">
-              <img 
-              src="https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2019-11-16&amp;kind=iossoftware&amp;bubble=ios_apps" 
-              alt="Download on iTunes" 
-              />
-            </a>
+          <div className="button-container">
+            <div className="button-grid">
+              <a href={project.appleLink.url}>
+                <img 
+                  src={project.appleLink.image.source} 
+                  alt={project.appleLink.image.description} 
+                />
+              </a>
 
-            <NavLink
-              className="linkButton" 
-              Icon={ project.link.icon } 
-              title={ project.link.title } 
-              href={ project.link.url } 
-              target="_blank"
-            />
+              <NavLink
+                className="link-button" 
+                Icon={project.githubLink.icon} 
+                title={project.githubLink.title} 
+                href={project.githubLink.url} 
+                target="_blank"
+                rel="noopener noreferrer"
+              />
+            </div>
           </div>
         </div>
         
-        <div className="box-section info-grid-col">
+        <div className="box-section grid-column">
           <h4>Accomplishments</h4>
           {learnedSection}
         </div>
       </div>
 
       {imageGrid}
-
     </StyledMainProject>
   )
 }

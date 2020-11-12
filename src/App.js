@@ -6,15 +6,17 @@ import 'react-image-lightbox/style.css';
 import { GlobalStyles } from './styles/GlobalStyles';
 import { lightTheme, darkTheme } from './styles/Themes';
 import { device } from './styles/Device';
-import { socialLinks, about, mainProject, otherProjects } from './Data';
+import { socialLinks, about, instaQR, projects } from './Data';
 
-import About from './components/about/About';
-import OutsideAlterter from './components/OutsideAlerter'; 
 import Navbar from './components/navbar/Navbar';
+import Menu from './components/menu/Menu';
+import OutsideAlterter from './components/OutsideAlerter';
+import About from './components/about/About';
 import MainProject from './components/mainProject/MainProject';
 import OtherProjects from './components/otherProjects/OtherProjects';
 import Footer from './components/footer/Footer';
-import Menu from './components/menu/Menu';
+
+// TODO: - https://flaviocopes.com/javascript-detect-dark-mode/
 
 class App extends Component {
 
@@ -81,7 +83,7 @@ class App extends Component {
     const theme = this.state.isDarkMode ? darkTheme : lightTheme;
     const logo = this.state.isDarkMode ? 'images/logo-light.png' : 'images/logo-dark.png';
     const { imageDisplayOpen, imageIndex } = this.state;
-    const images = mainProject.secondaryImages
+    const images = instaQR.secondaryImages
     
     return (
       <ThemeProvider theme={theme}>
@@ -107,25 +109,25 @@ class App extends Component {
               />
             </OutsideAlterter>
 
-            <div className="main-container">
+            <div className="section-container">
               <About 
                 about={about}
                 device={device}
               />
             </div>
 
-            <div className="main-container">
+            <div className="section-container">
               <MainProject
                 device={device}
-                project={mainProject}
+                project={instaQR}
                 handleImageClick={this.handleImageClick}
               />
             </div>
 
-            <div className="other-projects-container">
+            <div className="projects-container">
               <OtherProjects
                 device={device}
-                projects={otherProjects}
+                projects={projects}
               />
             </div>
 
@@ -136,7 +138,6 @@ class App extends Component {
                 links={socialLinks}
               />
             </div>
-
           </div>
 
           {imageDisplayOpen && (
