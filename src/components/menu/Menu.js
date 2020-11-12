@@ -32,10 +32,11 @@ const Menu = ({
               className="menu-link" 
               key={index}>
               <NavLink 
-                Icon={ link.icon } 
-                title={ link.title } 
-                href={ link.url } 
+                Icon={link.icon} 
+                title={link.title} 
+                href={link.url} 
                 target="_blank"
+                rel="noopener noreferrer"
             />
             </div>
          )}

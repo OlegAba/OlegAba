@@ -16,7 +16,7 @@ const NavLink = ({Icon, title, ...props }) => {
 
 NavLink.propTypes = {
   Icon: PropTypes.elementType.isRequired,
-  title: PropTypes.string.isRequired
+  title: PropTypes.string
 }
 
 export default NavLink;

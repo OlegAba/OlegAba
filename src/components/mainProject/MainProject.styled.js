@@ -1,29 +1,8 @@
 import styled from 'styled-components';
 
-export const StyledMainProject = styled.div`  
-  h1 {
-    text-align: center;
-    position: relative;
-    z-index: 2;
-    margin-bottom: -40px;
-  }
-
-  @media ${({ device }) => device.tablet} {
-    h1 {
-      margin-bottom: -25px;
-    }
-  }
-
-  .image-container {
-    padding-top: 80px;
-    padding-bottom: 80px;
-
-    img {
-      display: block;
-      width: 70%;
-      margin-right: auto;
-      margin-left: auto;
-    }
+export const StyledMainProject = styled.div`
+  .image-container img {
+    width: 70%;
   }
 
   .image-grid {
@@ -99,52 +78,12 @@ export const StyledMainProject = styled.div`
     }
   }
 
-  .info-grid-col {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+  .button-container {
     display: flex;
-    padding: 48px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-  }
-
-  @media ${({ device }) => device.mobileL} {
-    .info-grid-col {
-      padding: 24px;
-    }
-  }
-
-  ul {
-    display: block;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-    margin-top: 5px;
-    line-height: 1.5;
-  }
-
-  li {
-    margin-bottom: 6px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-left: 12px;
-    color: ${({ theme }) => theme.accent};
-
-    span {
-      color: ${({ theme }) => theme.body};
-    }
+    justify-content: center;
   }
 
   .button-grid {
-    height: 40px;
     display: flex;
     justify-content: space-around;
 
@@ -152,7 +91,7 @@ export const StyledMainProject = styled.div`
       transition: all .1s linear;
     }
 
-    .linkButton {
+    .link-button {
       color: ${({ theme }) => theme.accent};
       background-color: ${({ theme }) => theme.secondaryAccent};
       text-decoration: none;
@@ -164,8 +103,8 @@ export const StyledMainProject = styled.div`
       border-color: ${({ theme }) => theme.accent};
       transition: all .1s linear;
       -webkit-backface-visibility: hidden;
-      -moz-backface-visibility:    hidden;
-      -ms-backface-visibility:     hidden;
+      -moz-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
 
       &:hover {
         color: ${({ theme }) => theme.title};
@@ -190,7 +129,7 @@ export const StyledMainProject = styled.div`
       margin-left: auto;
       margin-top: 40px;
 
-      .linkButton {
+      .link-button {
         margin-left: 0;
         margin-top: 10px;
         margin-bottom: 20px;
