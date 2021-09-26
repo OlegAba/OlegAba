@@ -21,6 +21,7 @@ As an individual, I bring a strong skill set in technologies related to Web and 
 ### Languages and Tools
 <p align="left">
   <img alt="Swift" src="https://img.shields.io/badge/-Swift-df5c43?style=flat-square&logo=swift&logoColor=white" />
+  <img alt="Cocoapods" src="https://img.shields.io/badge/-Cocoapods-DB3E23?style=flat-square&logo=cocoapods&logoColor=white" />
   <img alt="C++" src="https://img.shields.io/badge/-C++-215A97?style=flat-square&logo=cplusplus&logoColor=white" />
   <img alt="Python" src="https://img.shields.io/badge/-Python-007ACC?style=flat-square&logo=python&logoColor=white" />
   <img alt="Nodejs" src="https://img.shields.io/badge/-Nodejs-43853d?style=flat-square&logo=node.js&logoColor=white" />
