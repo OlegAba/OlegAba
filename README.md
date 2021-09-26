@@ -32,4 +32,5 @@ As an individual, I bring a strong skill set in technologies related to Web and 
   <img alt="MongoDB" src="https://img.shields.io/badge/-MongoDB-13aa52?style=flat-square&logo=mongodb&logoColor=white" />
   <img alt="AWS" src="https://img.shields.io/badge/-AWS-E34F26?style=flat-square&logo=amazonaws&logoColor=white" />
   <img alt="Git" src="https://img.shields.io/badge/-Git-DD0031?style=flat-square&logo=git&logoColor=white" />
+  <img alt="Heroku" src="https://img.shields.io/badge/-Heroku-430098?style=flat-square&logo=heroku&logoColor=white" />
 </p>
