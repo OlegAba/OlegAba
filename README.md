@@ -11,7 +11,7 @@
 ### About
 As an individual, I bring a strong skill set in technologies related to Web and iOS development. Apart from utilizing several programming languages, I have experience working with version control, network calls, API’s, third-party libraries, frameworks, relational databases, multithreading, and an MVC & MVVM design pattern. I can adapt to a fluid and dynamic development environment - comfortable working with any computer/mobile OS and can transfer my skillset to any programming language or technology that is required.
 
-> Good design adds value faster than it adds cost. -- Thomas C. Gale
+> Programming is the Closest Thing We Have to Magic -- Jenni Luckett
 
 ### Languages and Tools
 <p align="left">
