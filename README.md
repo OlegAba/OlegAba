@@ -33,4 +33,7 @@ As an individual, I bring a strong skill set in technologies related to Web and 
   <img alt="AWS" src="https://img.shields.io/badge/-AWS-E34F26?style=flat-square&logo=amazonaws&logoColor=white" />
   <img alt="Git" src="https://img.shields.io/badge/-Git-DD0031?style=flat-square&logo=git&logoColor=white" />
   <img alt="Heroku" src="https://img.shields.io/badge/-Heroku-430098?style=flat-square&logo=heroku&logoColor=white" />
+  <img alt="Bitcoin" src="https://img.shields.io/badge/-Bitcoin-EA963D?style=flat-square&logo=bitcoin&logoColor=white" />
+  <img alt="Ethereum" src="https://img.shields.io/badge/-Ethereum-858585?style=flat-square&logo=ethereum&logoColor=white" />
+  <img alt="Monero" src="https://img.shields.io/badge/-Monero-E2692B?style=flat-square&logo=monero&logoColor=white" />
 </p>
