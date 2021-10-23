@@ -54,7 +54,7 @@ export const instaQR = {
   about: `InstaQR generates a live wallpaper by combining an image of your choice with 
   a scannable QR code. The QR code stores your share action (any link such as a social 
   media profile) and stays hidden until the live wallpaper is activated. Simply press into 
-  the screen from your lockscreen and have the person you would like to share with scan 
+  the screen from your lock screen and have the person you would like to share with scan 
   the barcode from their camera app.`,
   learned: [
     "Built a public Cocoapods Swift library",
