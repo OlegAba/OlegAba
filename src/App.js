@@ -16,8 +16,6 @@ import MainProject from './components/mainProject/MainProject';
 import OtherProjects from './components/otherProjects/OtherProjects';
 import Footer from './components/footer/Footer';
 
-// TODO: - https://flaviocopes.com/javascript-detect-dark-mode/
-
 class App extends Component {
 
   constructor(props) {
@@ -25,7 +23,7 @@ class App extends Component {
 
     this.state = {
       isMobile: false,
-      isDarkMode: true,
+      isDarkMode: window.matchMedia("(prefers-color-scheme: dark)").matches,
       menuOpen: false,
       imageDisplayOpen: false,
       imageIndex: 0,
@@ -35,6 +33,9 @@ class App extends Component {
   componentDidMount() {
     this.updateWidth();
     window.addEventListener("resize", this.updateWidth);
+
+    const handler = e => this.setState({ isDarkMode: e.matches });
+    window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', handler);
   }
 
   componentWillUnmount() {
