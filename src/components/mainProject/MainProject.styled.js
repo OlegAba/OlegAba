@@ -120,7 +120,7 @@ export const StyledMainProject = styled.div`
     }
   }
 
-  @media ${({ device }) => device.mobileL} {
+  @media ${({ device }) => device.mobileM} {
     .button-grid {
       height: auto;
       flex-direction: column;
