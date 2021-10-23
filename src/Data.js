@@ -11,12 +11,12 @@ export const socialLinks = [
   {
     title: "LinkedIn",
     icon: FaLinkedinIn,
-    url: "https://www.linkedin.com/in/olegabalonski/"
+    url: "https://www.linkedin.com/in/olegaba/"
   },
   {
     title: "Email",
     icon: MdEmail,
-    url: "mailto:olegaba.developer@gmail.com"
+    url: "mailto:mail@olegaba.com"
   },
   {
     title: "Resume",
