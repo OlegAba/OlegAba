@@ -7,23 +7,40 @@ export const StyledNavSwitch = styled.div`
   }
 
   .label {
-    background-color: ${({ theme }) => theme.accent};
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: space-between;
     border-radius: 50px;
     position: relative;
     padding: 5px;
     height: 26px;
-    width: 50px;
+    width: 26px;
+    z-index: 1;
   }
 
-  .icon-moon {
+  .icon {
+    grid-column: 1;
+    grid-row: 1;
     color: ${({ theme }) => theme.title};
+    z-index: 3;
+    background-color: ${({ theme }) => theme.background};
+    width: 35px;
+    height: 35px;
+    padding: 8px;
+    border-color: ${({ theme }) => theme.secondaryAccent};
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
   }
 
-  .icon-sun {
-    color: ${({ theme }) => theme.title};
+  .sun {
+    border-color: ${({ theme }) => theme.secondaryAccent};
+    background-color: ${({ theme }) => theme.backgroundActive}
+  }
+
+  .moon {
+    border-color: ${({ theme }) => theme.backgroundActive};
+    color: ${({ theme }) => theme.accent};
   }
 
   .ball {
@@ -34,10 +51,7 @@ export const StyledNavSwitch = styled.div`
     left: 2px;
     height: 22px;
     width: 22px;
-    transition: transform 0.2s linear;
+    z-index: 2;
   }
 
-  .checkbox:checked + .label .ball {
-    transform: translateX(24px);
-  }
 `;

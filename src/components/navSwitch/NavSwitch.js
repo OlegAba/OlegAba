@@ -6,6 +6,10 @@ import { FiSun } from 'react-icons/fi';
 
 const NavSwitch = ({isDarkMode, onChange, ...props }) => {
 
+  const icon = isDarkMode ? 
+                  <FiSun className="icon sun" /> : 
+                  <BsMoon className="icon moon" />;
+
   return (
     <StyledNavSwitch {...props}>
       <input 
@@ -16,10 +20,9 @@ const NavSwitch = ({isDarkMode, onChange, ...props }) => {
         checked={isDarkMode}
       />
 
-      <label htmlFor="checkbox" className="label">
-      <FiSun className="icon-sun" />
-      <BsMoon className="icon-moon" />
-      <div className="ball" />
+      <label htmlFor="checkbox">
+        { icon }
+        {/* <div className="ball" /> */}
       </label>
     </StyledNavSwitch>
   )

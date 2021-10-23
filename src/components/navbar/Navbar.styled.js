@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const StyledNavbar = styled.nav`
   padding: 20px 0 20px 0;
+  margin-top: 10px;
 
   .navbar-container {
     display: flex;
@@ -11,6 +12,7 @@ export const StyledNavbar = styled.nav`
     .nav-logo {
       flex: 1;
       min-width: 0;
+      opacity: 0;
 
       img {
         height: 26px;

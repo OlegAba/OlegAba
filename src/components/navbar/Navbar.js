@@ -58,9 +58,7 @@ const Navbar = ({
 
   const expandedNavbar = (
     <div className="navbar-container">
-      {navLogo}
       {navLinkButtons}
-      {navToggle}
     </div>
   );
 

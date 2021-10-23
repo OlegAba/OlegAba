@@ -21,7 +21,7 @@ const About = ({
       <div className="info-grid">
         <div className="box-section grid-column">
           <div>
-            <h4>About</h4>
+            <h4>Bio</h4>
             <p>{about.description}</p>
           </div>
         </div>
