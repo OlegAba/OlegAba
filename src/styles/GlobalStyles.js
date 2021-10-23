@@ -33,8 +33,8 @@ export const GlobalStyles = createGlobalStyle`
 
   @media ${({ device }) => device.tablet} {
     h1 {
-      margin-bottom: -15px;
-      font-size: 30px;
+      margin-bottom: -12.5px;
+      font-size: 25px;
     }
   }
 
@@ -127,6 +127,10 @@ export const GlobalStyles = createGlobalStyle`
   @media ${({ device }) => device.mobileL} {
     .grid-column {
       padding: 24px;
+    }
+
+    .max-width-container {
+      padding: 0 12px 0 12px;
     }
   }
 `;
