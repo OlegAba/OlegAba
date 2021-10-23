@@ -22,17 +22,19 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   h1 {
-    font-size: 62px;
+    font-size: 40px;
     text-align: center;
     position: relative;
     z-index: 2;
-    margin-bottom: -40px;
+    margin-bottom: -20px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
   }
 
   @media ${({ device }) => device.tablet} {
     h1 {
-      margin-bottom: -25px;
-      font-size: 40px;
+      margin-bottom: -15px;
+      font-size: 30px;
     }
   }
 
@@ -52,7 +54,7 @@ export const GlobalStyles = createGlobalStyle`
     display: block;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    padding-inline-start: 40px;
+    padding-inline-start: 20px;
     margin-top: 5px;
     line-height: 1.5;
 

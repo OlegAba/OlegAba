@@ -41,12 +41,6 @@ const Menu = ({
             </div>
          )}
 
-        <div className="menu-link">
-          <NavSwitch 
-            isDarkMode={isDarkMode}
-            onChange={onSwitchChange}
-          />
-        </div>
       </div>
     </StyledMenu>
   )
