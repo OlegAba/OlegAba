@@ -16,7 +16,7 @@ export const socialLinks = [
   {
     title: "Email",
     icon: MdEmail,
-    url: "mailto:mail@olegaba.com"
+    url: "mailto:contact@olegaba.com"
   },
   {
     title: "Resume",
@@ -71,7 +71,7 @@ export const instaQR = {
   appleLink: {
     url: "https://apps.apple.com/us/app/instaqr-live-wallpaper-maker/id1514732973?ign-mpt=uo%3D4",
     image: {
-      source: "https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2019-11-16&amp;kind=iossoftware&amp;bubble=ios_apps",
+      source: "images/badge-lrg.svg",
       description: "Download on iTunes"
     }
   },
