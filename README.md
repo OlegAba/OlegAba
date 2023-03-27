@@ -11,7 +11,7 @@
 </h1>
   
 ### About
-A Full-Stack Web and iOS developer interested in decentralized technologies. I am passionate about using technology to solve problems and make a positive impact on the world. On GitHub, you can find some of my personal projects and contributions to open source software. I am always looking to learn and collaborate with others, so feel free to reach out to me!
+A Full-Stack Web and iOS developer. I am passionate about using technology to solve problems and make a positive impact on the world. On GitHub, you can find some of my personal projects and contributions to open source software. I am always looking to learn and collaborate with others, so feel free to reach out to me!
 
 > Software is the Closest Thing We Have to Magic
 
