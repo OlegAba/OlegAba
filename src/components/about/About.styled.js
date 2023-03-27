@@ -6,6 +6,7 @@ export const StyledAbout = styled.div`
     padding-right: 45px;
     max-width: 100%;
     width: 400px;
+    border-radius: 50%;
   }
 
   .info-grid {
