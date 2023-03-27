@@ -18,26 +18,20 @@ export const socialLinks = [
     icon: MdEmail,
     url: "mailto:contact@olegaba.com"
   },
-  {
-    title: "Resume",
-    icon: IoMdDocument,
-    url: "http://www.OlegAba.com/resume.pdf"
-  }
+  // {
+  //   title: "Resume",
+  //   icon: IoMdDocument,
+  //   url: "http://www.OlegAba.com/resume.pdf"
+  // }
 ]
 
 export const about = {
   title: "Oleg Abalonski",
   image: {
-      source: './images/avatar.png',
+      source: 'https://avatars.githubusercontent.com/u/19398259',
       description: 'avatar'
   },
-  description: `As an individual, I bring a strong skill set in technologies related 
-  to Web and iOS development. Apart from utilizing several programming languages, I 
-  have experience working with version control, network calls, API’s, third-party 
-  libraries, frameworks, relational databases, multithreading, and an MVC & MVVM design 
-  pattern. I can adapt to a fluid and dynamic development environment; I am comfortable 
-  working with any computer/mobile OS and can transfer my skillset to any programming 
-  language or technology that is required.`
+  description: `A Full-Stack Web and iOS developer. I am passionate about using technology to solve problems and make a positive impact on the world. On GitHub, you can find some of my personal projects and contributions to open source software. I am always looking to learn and collaborate with others, so feel free to reach out to me!`
 }
 
 export const instaQR = {

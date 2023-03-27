@@ -8,6 +8,7 @@ export const StyledFooter = styled.footer`
   .copyright-container {
     flex: 1;
     color: ${({ theme }) => theme.title};
+    font-weight: 500;
   }
 
   .links-container {
@@ -37,6 +38,10 @@ export const StyledFooter = styled.footer`
 
     .links-container {
       justify-content: center;
+
+      .link a {
+        margin-right: 30px;
+      }
     }
   }
 `;
