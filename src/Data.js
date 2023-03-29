@@ -88,20 +88,45 @@ export const projects = [
     url: "https://github.com/OlegAba/SuperSnapcode"
   },
   {
+    title: "Timestamp API",
+    image: "images/Projects/API-1.png",
+    url: "https://timestamp-microservice.fly.dev/"
+  },
+  {
+    title: "Request Header Parser API",
+    image: "images/Projects/API-2.png",
+    url: "https://request-header-parser-microservice.fly.dev/"
+  },
+  {
+    title: "URL Shortener API",
+    image: "images/Projects/API-3.png",
+    url: "https://url-shortener-microservice.fly.dev/"
+  },
+  {
+    title: "Exercise Tracker API",
+    image: "images/Projects/API-4.png",
+    url: "https://exercise-tracker-fcc.fly.dev/"
+  },
+  {
+    title: "File Metadata API",
+    image: "images/Projects/API-5.png",
+    url: "https://file-metadata-microservice.fly.dev/"
+  },
+  {
     title: "Podcast Explorer",
     image: "images/Projects/PodcastExplorer.png",
     url: "https://github.com/OlegAba/PodcastEpisodeExplorer"
   },
-  {
-    title: "Movie Explorer",
-    image: "images/Projects/MovieExplorer.png",
-    url: "https://github.com/OlegAba/movie-explorer"
-  },
-  {
-    title: "Product Landing Page",
-    image: "images/Projects/ProductLandingPage.png",
-    url: "https://olegaba.github.io/FCC-Responsive-Web-Design-Projects/ProductLandingPage"
-  },
+  // {
+  //   title: "Movie Explorer",
+  //   image: "images/Projects/MovieExplorer.png",
+  //   url: "https://github.com/OlegAba/movie-explorer"
+  // },
+  // {
+  //   title: "Product Landing Page",
+  //   image: "images/Projects/ProductLandingPage.png",
+  //   url: "https://olegaba.github.io/FCC-Responsive-Web-Design-Projects/ProductLandingPage"
+  // },
   {
     title: "Technical Documentation",
     image: "images/Projects/TechnicalDocumentation.png",
