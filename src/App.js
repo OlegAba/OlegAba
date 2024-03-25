@@ -135,7 +135,7 @@ class App extends Component {
             <div className="footer-container">
               <Footer
                 device={device} 
-                copyright="© 2020 Oleg Abalonski - All rights reserved"
+                copyright="© 2024 Oleg Aba - All rights reserved"
                 links={socialLinks}
               />
             </div>
