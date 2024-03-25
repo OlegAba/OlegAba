@@ -26,7 +26,7 @@ export const socialLinks = [
 ]
 
 export const about = {
-  title: "Oleg Abalonski",
+  title: "Oleg Aba",
   image: {
       source: 'https://avatars.githubusercontent.com/u/19398259',
       description: 'avatar'
