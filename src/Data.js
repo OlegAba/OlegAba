@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import { IoMdDocument } from 'react-icons/io';
 
@@ -7,11 +7,6 @@ export const socialLinks = [
     title: "Github",
     icon: FaGithub,
     url: "https://github.com/OlegAba"
-  },
-  {
-    title: "LinkedIn",
-    icon: FaLinkedinIn,
-    url: "https://www.linkedin.com/in/olegaba/"
   },
   {
     title: "Email",
@@ -92,31 +87,31 @@ export const projects = [
     image: "images/Projects/API-1.png",
     url: "https://timestamp-microservice.fly.dev/"
   },
-  {
-    title: "Request Header Parser API",
-    image: "images/Projects/API-2.png",
-    url: "https://request-header-parser-microservice.fly.dev/"
-  },
-  {
-    title: "URL Shortener API",
-    image: "images/Projects/API-3.png",
-    url: "https://url-shortener-microservice.fly.dev/"
-  },
-  {
-    title: "Exercise Tracker API",
-    image: "images/Projects/API-4.png",
-    url: "https://exercise-tracker-fcc.fly.dev/"
-  },
-  {
-    title: "File Metadata API",
-    image: "images/Projects/API-5.png",
-    url: "https://file-metadata-microservice.fly.dev/"
-  },
-  {
-    title: "Podcast Explorer",
-    image: "images/Projects/PodcastExplorer.png",
-    url: "https://github.com/OlegAba/PodcastEpisodeExplorer"
-  },
+  // {
+  //   title: "Request Header Parser API",
+  //   image: "images/Projects/API-2.png",
+  //   url: "https://request-header-parser-microservice.fly.dev/"
+  // },
+  // {
+  //   title: "URL Shortener API",
+  //   image: "images/Projects/API-3.png",
+  //   url: "https://url-shortener-microservice.fly.dev/"
+  // },
+  // {
+  //   title: "Exercise Tracker API",
+  //   image: "images/Projects/API-4.png",
+  //   url: "https://exercise-tracker-fcc.fly.dev/"
+  // },
+  // {
+  //   title: "File Metadata API",
+  //   image: "images/Projects/API-5.png",
+  //   url: "https://file-metadata-microservice.fly.dev/"
+  // },
+  // {
+  //   title: "Podcast Explorer",
+  //   image: "images/Projects/PodcastExplorer.png",
+  //   url: "https://github.com/OlegAba/PodcastEpisodeExplorer"
+  // },
   // {
   //   title: "Movie Explorer",
   //   image: "images/Projects/MovieExplorer.png",
@@ -127,9 +122,9 @@ export const projects = [
   //   image: "images/Projects/ProductLandingPage.png",
   //   url: "https://olegaba.github.io/FCC-Responsive-Web-Design-Projects/ProductLandingPage"
   // },
-  {
-    title: "Technical Documentation",
-    image: "images/Projects/TechnicalDocumentation.png",
-    url: "https://olegaba.github.io/FCC-Responsive-Web-Design-Projects/TechnicalDocumentationPage/"
-  },
+  // {
+  //   title: "Technical Documentation",
+  //   image: "images/Projects/TechnicalDocumentation.png",
+  //   url: "https://olegaba.github.io/FCC-Responsive-Web-Design-Projects/TechnicalDocumentationPage/"
+  // },
 ]
